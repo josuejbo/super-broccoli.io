@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" onclick="cambiarSeccion('inicio')">Inicio</a></li>
+                <li><a href="javascript:void(0)" onclick="cambiarSeccion('nosotros')">Nosotros</a></li>
+                <li><a href="javascript:void(0)" onclick="cambiarSeccion('menu')">Menú</a></li>
+                <li><a href="javascript:void(0)" onclick="cambiarSeccion('mision-vision')">Misión y Visión</a></li>
+                <li><a href="javascript:void(0)" onclick="cambiarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenedor-principal">
+        
+        <section id="inicio" class="seccion activa hero-inicio">
+            <img src="logo.png" alt="Logo Sweet Delights" class="logo-principal">
+            <h1 class="titulo-principal">Sweet Delights</h1>
+            <div class="vidrio-contenedor">
+                <h2 class="dorado">Bienvenidos</h2>
+                <p>Sweet delights es una propuesta de negocio enfocada en la elaboración de productos de repostería, pensada para satisfacer la demanda de postres personalizados y de calidad.</p>
+                <p>Este emprendimiento busca ofrecer opciones atractivas tanto en sabor como en presentación, adaptándose a diferentes ocasiones como celebraciones familiares, eventos sociales y pedidos individuales.</p>
+            </div>
+        </section>
+
+        <section id="nosotros" class="seccion hero-nosotros">
+            <div class="vidrio-contenedor">
+                <h2 class="dorado">Más de Nosotros</h2>
+                <p>El proyecto se centra en la creación de una pastelería que combine creatividad, calidad y accesibilidad.</p>
+                <p>Se pretende brindar una experiencia agradable al cliente, no solo a través del producto final, sino también mediante una atención al cliente eficiente y personalizada.</p>
+            </div>
+        </section>
+
+        <section id="menu" class="seccion hero-menu">
+            <div class="vidrio-contenedor">
+                <h2 class="dorado">Pasteles Temáticos y Personalizados</h2>
+                <div class="grid-menu">
+                    <div class="item-menu">
+                        <img src="pastel tematica.png" alt="Pastel">
+                        <p>Pasteles Temáticos - <strong>Q300.00</strong></p>
+                    </div>
+                    <div class="item-menu">
+                        <img src="CupCake.png" alt="Cupcakes">
+                        <p>Cupcakes Decorados - <strong>Q85.00 c/u</strong></p>
+                    </div>
+                    <div class="item-menu">
+                        <img src="galletas.png" alt="Galletas">
+                        <p>Galletas Artesanales - <strong>Q65.00</strong></p>
+                    </div>
+                    <div class="item-menu">
+                        <img src="postre.png" alt="Postres">
+                        <p>Postres Fríos - <strong>Q250.00</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mision-vision" class="seccion hero-mision">
+            <div class="vidrio-contenedor">
+                <h2 class="dorado">Misión y Visión</h2>
+                <h3 class="dorado-peque">Misión Corporativa</h3>
+                <p>Ofrecer productos de repostería que combinen sabor, calidad y creatividad, brindando a los clientes una experiencia satisfactoria en cada compra.</p>
+                <h3 class="dorado-peque">Visión Empresarial</h3>
+                <p>Ser una pastelería reconocida en la comunidad por su innovación, calidad en sus productos y atención al cliente.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion hero-contacto">
+            <div class="vidrio-contenedor">
+                <h2 class="dorado">Contacto</h2>
+                <p>Teléfono: 5555-0000</p>
+                <p>Instagram y Tik tok: @delights.gt</p>
+                
+                <form class="formulario">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo" required>
+                    <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+                    <button type="submit" class="btn-rojo">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
